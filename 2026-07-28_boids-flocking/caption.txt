@@ -1,0 +1,15 @@
+🧭 How do hundreds of birds turn in unison with no leader calling the shots?
+
+I built a simulation that shows exactly how — a flock of 90 agents, each running the same simple rulebook, self-organizing into fluid motion in real time, no central controller in sight.
+
+Separation: every boid keeps a little personal space, steering away from anything too close so the flock doesn't collapse into a pile.
+
+Alignment: each boid matches its direction to the average heading of its nearby neighbors — this is what makes the group start moving as one.
+
+Cohesion: each boid also steers gently toward the average position of its neighbors, pulling stragglers back into the group.
+
+No single boid knows the flock's overall shape or direction — it only ever reacts to what's nearby. That "local rules only" design is the same idea behind ant colonies, traffic flow models, and parts of multi-agent robotics: complex group behavior emerging from dead-simple individual rules. ✨ Click and hold in the demo and watch the whole flock chase your cursor.
+
+Video below.
+
+#AI #EmergentBehavior #Python #Simulation #MultiAgentSystems #AIExplained
