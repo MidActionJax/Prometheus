@@ -1,0 +1,32 @@
+GIT / GITHUB COMMANDS — Ant Colony Optimization demo
+=====================================================
+
+This folder and the README.md update are already in place inside your
+E:\Linkedin repo. Open PowerShell or Git Bash, cd into E:\Linkedin, and run:
+
+    git checkout -b demo/ant-colony-optimization
+    git add .
+    git commit -m "Add Ant Colony Optimization demo"
+    git push -u origin demo/ant-colony-optimization
+
+WHAT HAPPENS NEXT
+------------------
+1. After the push, open github.com/MidActionJax/Prometheus in your browser.
+   GitHub will show a yellow banner with a "Compare & pull request" button
+   for the branch you just pushed — click it.
+2. In the pull request form:
+   - Title:  Add Ant Colony Optimization demo
+   - Description box: paste the full contents of PR_DESCRIPTION.md
+     (open that file, select all, copy, paste into the GitHub box).
+3. Click "Create pull request".
+4. Whenever you're ready (e.g. after reviewing, or right away if you just
+   want it merged), click "Merge pull request" on the PR page. A squash
+   merge is fine.
+
+AFTER MERGING
+-------------
+Switch back to your main branch and pull the merge down so the next demo
+starts from a clean, up-to-date state:
+
+    git checkout main
+    git pull

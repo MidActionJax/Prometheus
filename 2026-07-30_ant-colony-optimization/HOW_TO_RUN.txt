@@ -1,0 +1,59 @@
+HOW TO RUN — Ant Colony Optimization demo
+==========================================
+
+1) INSTALL PYTHON (skip if you already have it)
+   - Go to python.org/downloads and download the latest Python 3 installer.
+   - Run it. On the FIRST screen, check the box "Add python.exe to PATH"
+     before clicking Install. This step is easy to miss and causes the
+     "python is not recognized" error later if skipped.
+   - To confirm it worked, open a new PowerShell or Command Prompt window
+     and type:  python --version
+     You should see something like "Python 3.12.x".
+
+2) INSTALL THE ONE DEPENDENCY
+   This demo uses pygame for graphics. Open PowerShell (or Command Prompt)
+   and run:
+       pip install pygame
+
+3) RUN THE DEMO
+   - Open PowerShell and navigate into this folder. If this folder is at
+     E:\Linkedin\2026-07-30_ant-colony-optimization, run:
+       cd E:\Linkedin\2026-07-30_ant-colony-optimization
+       python ant_colony_optimization.py
+   - A dark window should open showing four glowing curved lines between
+     a cyan "NEST" circle and a magenta "FOOD" circle, with small bright
+     dots (ants) travelling along them.
+
+4) ON-SCREEN CONTROLS
+   - SPACE  = pause / resume the simulation
+   - R      = reset the simulation back to the start
+   - ESC    = quit
+   - You can also just close the window normally.
+
+5) WHAT TO LOOK FOR WHILE RECORDING
+   - In the first ~10-15 seconds all four paths look similarly dim/thin.
+   - By ~30-45 seconds in, one path (the geometrically shortest one)
+     should clearly be glowing brighter and thicker than the others, and
+     the on-screen HUD text will show its "chosen %" climbing toward
+     90-100% while the rest fall toward near-zero.
+   - For the most satisfying clip, let it run for 20-30 seconds before
+     you start recording so the divergence is already visible, or record
+     from the start and speed the clip up 2x-3x when editing.
+
+6) SCREEN-RECORDING IT
+   Easiest built-in option (Windows 10/11):
+     - Press Win+G to open Xbox Game Bar, then click the record button.
+       OR just press Win+Alt+R to start recording immediately, and press
+       it again to stop. The clip is saved to your Videos\Captures folder.
+   Alternative (more control): install OBS Studio (obsproject.com), add a
+   "Display Capture" or "Window Capture" source, and use its Start/Stop
+   Recording buttons.
+
+7) SUGGESTED CLIP LENGTH
+   10-20 seconds. Trim to the part where the winning path is clearly
+   pulling ahead of the others — that's the "aha" moment.
+
+8) POSTING
+   Post natively to LinkedIn (upload the video file directly, don't link
+   out to it) using the text in caption.txt as your post copy. Do not
+   just paste a link to the file.
