@@ -5,3 +5,5 @@ Thumbs.db
 *.mp4
 *.mov
 *.avi
+.claude/settings.local.json
+automation/logs/

@@ -1,0 +1,13 @@
+How does a colony of ants with zero maps, zero memory, and zero central planner reliably find the shortest path to food? They don't calculate it. They vote on it — with chemistry.
+
+I built a demo that drops ants onto four different routes between a nest and a food source, lets them lay down pheromone as they walk, and watches the colony converge on the shortest one in real time — no ant ever "knows" which path is best.
+
+The trick — speed, not intelligence: shorter paths get walked faster, which means ants finish their round trip sooner and lay down pheromone more often per minute. That small timing edge is the entire mechanism. Nothing compares path lengths directly.
+
+The trick — feedback with a memory leak: more pheromone makes a path more attractive to the next ant, which lays more pheromone, which attracts more ants. But pheromone also evaporates continuously, so a path has to keep earning its traffic — that's what stops the colony from getting permanently locked into an early, lucky-but-wrong answer.
+
+The trick — a little randomness never leaves: even the "worst" path keeps a small chance of being chosen. That's not noise, it's insurance — if conditions change, the colony can still adapt instead of being stuck.
+
+This is the same idea behind real Ant Colony Optimization algorithms used for network routing and logistics scheduling — sometimes the most robust way to find an optimum isn't a smarter agent, it's a dumb agent repeated enough times with the right feedback loop. Full run in the video below.
+
+#AI #Algorithms #SoftwareEngineering #ArtificialIntelligence #Optimization #Python
