@@ -1,0 +1,13 @@
+What if you never told an agent where the goal was, what a wall meant, or what "good" looked like — just handed it a point score after every move?
+
+I built a demo that drops a Q-learning agent into a grid maze with a hidden goal and a hazard to avoid, and lets it figure out the entire route from scratch, purely from trial, error, and a running scoreboard.
+
+The scoreboard IS the teacher: every step costs -1, wandering into the hazard costs -20 and ends the run, reaching the goal pays +50. No hints, no directions — the agent starts by bumping into walls and hazards essentially at random.
+
+The table that remembers: underneath, it's keeping one number per (cell, direction) pair — a "Q-value" estimating how good that move is long-term. After every step it nudges that estimate toward the reward it just got, plus a discounted guess of how good things look from where it landed. Do that thousands of times and the good estimates near the goal quietly propagate backward through the whole grid.
+
+Explore, then exploit: early on the agent ignores its own table and just wanders (high "epsilon"). As epsilon decays, it leans more on what it's learned. Watch the heatmap — dark means "still unknown," gold means "the agent is confident this is a great place to be" — and the little arrows snap into a clean route as training goes on.
+
+This loop (try something, get a score, update a belief, repeat) is the same backbone behind game-playing AI and a lot of modern reinforcement learning — the "smarts" is really just very disciplined bookkeeping over experience. Full training run in the video below.
+
+#AI #MachineLearning #ReinforcementLearning #Algorithms #SoftwareEngineering #Python

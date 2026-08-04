@@ -1,0 +1,62 @@
+HOW TO RUN — Q-Learning Grid World demo
+========================================
+
+1) INSTALL PYTHON (skip if you already have it)
+   - Go to python.org/downloads and download the latest Python 3 installer.
+   - Run it. On the FIRST screen, check the box "Add python.exe to PATH"
+     before clicking Install. This step is easy to miss and causes the
+     "python is not recognized" error later if skipped.
+   - To confirm it worked, open a new PowerShell or Command Prompt window
+     and type:  python --version
+     You should see something like "Python 3.12.x".
+
+2) INSTALL THE ONE DEPENDENCY
+   This demo uses pygame for graphics. Open PowerShell (or Command Prompt)
+   and run:
+       pip install pygame
+
+3) RUN THE DEMO
+   - Open PowerShell and navigate into this folder. If this folder is at
+     E:\Linkedin\2026-08-04_q-learning-gridworld, run:
+       cd E:\Linkedin\2026-08-04_q-learning-gridworld
+       python q_learning_gridworld.py
+   - A dark window should open showing a shaded grid, dark wall blocks, a
+     pulsing red hazard cell, a pulsing gold goal cell, and a bright cyan
+     dot (the agent) moving around.
+
+4) ON-SCREEN CONTROLS
+   - SPACE  = pause / resume training
+   - R      = reset training completely (fresh Q-table, starts learning
+              over from scratch)
+   - ESC    = quit
+   - You can also just close the window normally.
+
+5) WHAT TO LOOK FOR WHILE RECORDING
+   - In the first 5-10 seconds the agent moves almost randomly and the
+     grid stays mostly dark (it hasn't learned anything yet).
+   - By 20-30 seconds in, you should see: the cells along the real route
+     to the goal turning brighter (purple -> cyan -> gold), small white
+     arrows across the grid pointing toward the goal, and the HUD's
+     "Last episode" step count trending down.
+   - For the most satisfying clip, let it run 30-45 seconds before you
+     start recording so the policy has visibly organized, then record a
+     clean 10-20 second window of the agent taking a near-direct route.
+
+6) SCREEN-RECORDING IT
+   Easiest built-in option (Windows 10/11):
+     - Press Win+G to open Xbox Game Bar, then click the record button.
+       OR just press Win+Alt+R to start recording immediately, and press
+       it again to stop. The clip is saved to your Videos\Captures folder.
+   Alternative (more control): install OBS Studio (obsproject.com), add a
+   "Display Capture" or "Window Capture" source, and use its Start/Stop
+   Recording buttons.
+
+7) SUGGESTED CLIP LENGTH
+   10-20 seconds. Ideally capture a moment where the heatmap/arrows are
+   already fairly organized so the "aha, it learned a route" is visible
+   without waiting through the random early phase.
+
+8) POSTING
+   Post natively to LinkedIn (upload the video file directly, don't link
+   out to it) using the text in caption.txt as your post copy. Do not
+   just paste a link to the file.
