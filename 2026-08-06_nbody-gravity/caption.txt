@@ -1,0 +1,13 @@
+🪐 What happens when you give a handful of objects nothing but gravity and let them go?
+
+I built a simulation of true N-body gravity — every object pulling on every other object at once, no fixed sun, no scripted orbits, no shortcuts.
+
+The physics: every frame, each body sums up Newton's law of gravitation (F = G·m1·m2/r²) pulling it toward every other body in the system, then updates its velocity and position from that combined force. Nothing about the motion is hand-drawn — it's entirely a byproduct of that math running 60 times a second.
+
+Why it looks chaotic: with only two bodies, gravity has a clean, solvable answer — a perfect ellipse. Add a third body and you get the actual "three-body problem," a system with no general closed-form solution, where tiny differences in starting position snowball into completely different paths. That's deterministic chaos: identical rules every time, but no two runs ever look alike.
+
+Click anywhere in the demo to fling a new body into the system and watch it get folded into (or flung back out of) the gravitational dance in real time.
+
+This is the same underlying math behind everything from planetary motion to galaxy formation, just small enough to watch unfold on a screen. Video below.
+
+#Python #Physics #Simulation #Programming #ComputerScience #TechExplained

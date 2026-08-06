@@ -1,0 +1,18 @@
+Run these from E:\Linkedin in PowerShell or Git Bash:
+
+git checkout -b demo/nbody-gravity
+git add .
+git commit -m "Add N-Body Gravity Simulation demo"
+git push -u origin demo/nbody-gravity
+
+Then on GitHub:
+1. A "Compare & pull request" button will appear on the repo page — click it.
+2. Title:  Add N-Body Gravity Simulation demo
+3. Description: paste the full contents of PR_DESCRIPTION.md (in this same folder).
+4. Click "Create pull request".
+5. When you're happy with it, click "Merge pull request" (squash merge is fine).
+
+After merging, run this so the next demo starts from the latest state:
+
+git checkout main
+git pull
