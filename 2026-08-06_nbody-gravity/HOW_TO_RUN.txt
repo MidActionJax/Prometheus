@@ -1,0 +1,38 @@
+HOW TO RUN THIS DEMO (Windows)
+==============================
+
+1. Install Python (skip if you already have it)
+   - Go to https://www.python.org/downloads/
+   - Download and run the installer
+   - IMPORTANT: check the box "Add python.exe to PATH" before clicking Install
+
+2. Install pygame
+   - Open Command Prompt (search "cmd" in the Start menu)
+   - Run:  pip install pygame
+
+3. Run the demo
+   - In Command Prompt, navigate to this folder, e.g.:
+       cd E:\Linkedin\2026-08-06_nbody-gravity
+   - Run:
+       python gravity_nbody.py
+   - A window titled "N-Body Gravity Simulation" will open with a small
+     glowing "sun" and several orbiting bodies already in motion.
+
+4. Controls while it's running
+   - Click anywhere: fling a new glowing body into the system
+   - R: reset to a fresh random system
+   - SPACE: pause / resume
+   - Esc or close the window: quit
+
+5. Record it for LinkedIn
+   - Press Win + G to open Xbox Game Bar, click the record button (or Win + Alt + R
+     to start/stop recording directly) while the demo window is focused.
+   - Alternatively use a free tool like OBS Studio for more control.
+   - Aim for 10-20 seconds. Letting the trails build up for the first several
+     seconds before clicking to add a body or two makes for a good clip.
+
+6. Post
+   - Upload the recorded video natively (not a link).
+   - Use the caption in caption.txt in this same folder.
+
+That's it — nothing else to configure.
