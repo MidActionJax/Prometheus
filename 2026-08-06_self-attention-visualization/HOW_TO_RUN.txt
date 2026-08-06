@@ -1,0 +1,56 @@
+HOW TO RUN — Self-Attention Visualization
+===========================================
+
+1) INSTALL PYTHON (skip if you already have it)
+   - Go to https://www.python.org/downloads/
+   - Download and run the installer for your OS.
+   - IMPORTANT: on the first install screen, check the box that says
+     "Add Python to PATH" before clicking Install.
+   - To check it worked, open a terminal (PowerShell on Windows, Terminal
+     on Mac) and type:  python --version
+     You should see something like "Python 3.11.x".
+
+2) INSTALL THE ONE DEPENDENCY
+   This demo uses pygame. Open a terminal and run:
+       pip install pygame
+
+3) RUN THE DEMO
+   Open a terminal, navigate into this folder, and run the script:
+       cd path\to\2026-08-06_self-attention-visualization
+       python self_attention.py
+
+   A dark window titled "Self-Attention Visualization" should open showing
+   the sentence "The cat sat on the mat because it was tired" laid out
+   across the top, with glowing lines and a live stats panel.
+
+4) ON-SCREEN CONTROLS
+   SPACE        - pause / resume the auto-advancing demo
+   RIGHT ARROW  - manually step to the next query word
+   R            - restart from the first word
+   ESC          - quit (or just close the window)
+
+   Left to run on its own, the demo automatically cycles through every
+   word in the sentence every ~2 seconds. The moment to watch for: when
+   the highlighted (yellow-bordered) word becomes "it," the glowing lines
+   swing over to "cat" and "mat" — that's the coreference moment.
+
+5) HOW TO SCREEN-RECORD IT
+   Windows:
+     - Press Win+G to open Xbox Game Bar, then click the record button —
+       or just press Win+Alt+R to start recording immediately (and again
+       to stop). Clips save to Videos\Captures by default.
+     - Alternative: OBS Studio (free, obsproject.com) if you want more
+       control over resolution/framerate.
+   Mac:
+     - Press Cmd+Shift+5, choose "Record Selected Portion," draw a box
+       around the window, then hit Record.
+
+6) SUGGESTED CLIP LENGTH
+   10–20 seconds. A good clip: let it run through 2–3 words on their
+   normal self-focused pattern, then keep rolling until it lands on "it"
+   so viewers see the glow visibly jump to "cat."
+
+7) POSTING
+   Post the video natively (don't just link out to it) and use the text
+   in caption.txt as the write-up. Don't forget to review the caption for
+   any last-minute edits before publishing.

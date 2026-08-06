@@ -1,0 +1,11 @@
+How does a language model know that "it" refers to the cat and not the mat?
+
+I built a demo that visualizes self-attention — the mechanism inside every Transformer model (GPT, BERT, Claude, and friends) that lets a word "look at" every other word in a sentence and decide which ones actually matter to it.
+
+How the math works: for each word, the model builds two vectors — a query ("what am I looking for?") and a key ("what do I contain?"). Taking the dot product of one word's query against every other word's key, then running the results through softmax, produces a set of attention weights that sum to 1 — a probability distribution over "how much should I focus on you."
+
+Watching it happen: in the demo, most words spend their attention mostly on themselves and their immediate neighbors — unglamorous, but it's the honest baseline. Then the query token becomes "it," and the glowing lines swing back to "cat" and "mat." That's coreference resolution in miniature: the pronoun's query vector is shaped to search for its antecedent, the same way a trained attention head learns to link pronouns back to the nouns they replace.
+
+Why it matters: this single mechanism — score, softmax, weighted focus — is the building block behind how modern models handle long-range context, ambiguity, and meaning that depends on more than just the words sitting next to each other. Video below shows it running end to end.
+
+#MachineLearning #ArtificialIntelligence #Transformers #NLP #DeepLearning #SoftwareEngineering
