@@ -1,0 +1,61 @@
+GIT COMMANDS — Recursive Backtracking Maze Generation demo
+====================================================================
+Run these yourself from E:\Linkedin (the Prometheus repo root), in
+PowerShell or Git Bash. Copy-paste one line at a time.
+====================================================================
+
+    cd E:\Linkedin
+    git checkout -b demo/maze-generation-backtracking
+    git add .
+    git commit -m "Add Recursive Backtracking Maze Generation demo"
+    git push -u origin demo/maze-generation-backtracking
+
+
+WHAT EACH LINE DOES
+--------------------------------------------------------------------
+  cd E:\Linkedin        move into the repo folder
+  git checkout -b ...   create a new branch and switch onto it
+  git add .             stage the new demo folder + updated README.md
+  git commit -m "..."   save that snapshot with a message
+  git push -u origin    upload the branch to GitHub
+
+
+THEN, ON GITHUB
+--------------------------------------------------------------------
+1. Go to https://github.com/MidActionJax/Prometheus
+
+2. Within a minute or two of pushing, a yellow banner appears near the
+   top of the page with a green "Compare & pull request" button.
+   Click it.
+   (If the banner isn't there: click the "Pull requests" tab, then
+   "New pull request", and set the compare branch to
+   demo/maze-generation-backtracking.)
+
+3. In the TITLE box, paste:
+
+       Add Recursive Backtracking Maze Generation demo
+
+4. In the big DESCRIPTION box underneath, paste the ENTIRE contents of
+   PR_DESCRIPTION.md from this folder
+   (E:\Linkedin\2026-08-11_maze-generation-backtracking\PR_DESCRIPTION.md).
+   Open it in Notepad, Ctrl+A, Ctrl+C, then Ctrl+V into the box.
+
+5. Click the green "Create pull request" button.
+
+6. Whenever you're ready (there's no rush — you can leave it open while
+   you record the video), scroll down on the PR page and click
+   "Merge pull request", then "Confirm merge".
+   Squash merge is fine if you prefer it — use the dropdown arrow next
+   to the merge button and pick "Squash and merge".
+
+
+AFTER MERGING — IMPORTANT
+--------------------------------------------------------------------
+Get your local copy back in sync so the next demo starts from the
+latest state:
+
+    git checkout main
+    git pull
+
+If you skip this, the next demo will branch off stale code and you'll
+get confusing conflicts later.
