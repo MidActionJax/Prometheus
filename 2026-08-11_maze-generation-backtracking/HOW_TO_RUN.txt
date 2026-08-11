@@ -1,0 +1,108 @@
+HOW TO RUN THIS DEMO
+====================================================================
+Demo: Recursive Backtracking — Maze Generation
+File: maze_recursive_backtracking.py
+Folder: 2026-08-11_maze-generation-backtracking
+====================================================================
+
+
+STEP 1 — MAKE SURE PYTHON IS INSTALLED
+--------------------------------------------------------------------
+Open PowerShell (press the Windows key, type "powershell", hit Enter)
+and run:
+
+    python --version
+
+If you see something like "Python 3.12.x" you're set — skip to Step 2.
+
+If you get an error or nothing happens:
+  1. Go to https://www.python.org/downloads/
+  2. Click the big yellow "Download Python" button.
+  3. Run the installer.
+  4. IMPORTANT: on the very first installer screen, tick the checkbox
+     "Add python.exe to PATH" at the bottom BEFORE clicking Install.
+  5. Finish the install, then CLOSE and REOPEN PowerShell and try
+     "python --version" again.
+
+
+STEP 2 — INSTALL THE ONE DEPENDENCY
+--------------------------------------------------------------------
+This demo uses pygame for the graphics. Install it once:
+
+    pip install pygame
+
+You only ever have to do this once per computer. If you've run an
+earlier demo from this repo, it's already installed.
+
+
+STEP 3 — RUN IT
+--------------------------------------------------------------------
+In PowerShell, paste these two lines one at a time:
+
+    cd E:\Linkedin\2026-08-11_maze-generation-backtracking
+    python maze_recursive_backtracking.py
+
+A 1180x800 window opens and the maze immediately starts carving
+itself. Full generation takes roughly 20 seconds, then it switches to
+the gold "longest path" finale, which loops forever until you quit.
+
+
+ON-SCREEN CONTROLS
+--------------------------------------------------------------------
+    SPACE        pause / resume
+    R            throw it away and generate a brand new maze
+    UP ARROW     carve faster
+    DOWN ARROW   carve slower
+    ESC (or Q)   quit
+
+Tip for recording: press R right before you start recording so the
+maze begins from empty. If you want the whole generation to fit a
+shorter clip, tap UP two or three times first.
+
+
+WHAT YOU'RE LOOKING AT
+--------------------------------------------------------------------
+- The bright white/coloured dot is the "carve head" — the current cell
+  in the depth-first search.
+- Corridor colour = how deep the recursion stack was when that corridor
+  was carved. Long smooth colour runs = burrowing deep. Pink ring
+  pulses = hitting a dead end and backtracking.
+- Bottom-left panel = live stats (cells carved, corridors, current
+  stack depth, backtracks, elapsed time, phase).
+- When carving finishes, the maze dims and a gold comet traces the
+  longest path that exists inside the maze.
+
+
+STEP 4 — SCREEN-RECORD IT
+--------------------------------------------------------------------
+Easiest option (built into Windows — Xbox Game Bar):
+  1. Click the demo window so it's the active window.
+  2. Press  Win + Alt + R  to START recording immediately.
+     (If nothing happens, press Win + G first to open Game Bar, tick
+     "Enable gaming features for this app" if prompted, then use the
+     Capture widget's record button.)
+  3. Press  Win + Alt + R  again to STOP.
+  4. The .mp4 lands in:  C:\Users\<you>\Videos\Captures
+
+Better quality / more control: OBS Studio (free, obsproject.com).
+Add a "Window Capture" source pointed at the demo window, hit
+"Start Recording", hit "Stop Recording".
+
+SUGGESTED CLIP LENGTH: 10-20 seconds.
+Best 15 seconds to capture: start recording a few seconds into the
+carve (once there's visible colour on the grid), let it run through
+the busiest stretch, and ideally catch the moment it finishes and the
+gold longest-path pulse kicks in. If you want the finale guaranteed,
+tap UP twice so carving completes in about 8 seconds.
+
+If you're recording the code alongside the app, the top comment block
+in the .py file explains the whole algorithm — that's a good thing to
+have visible on screen.
+
+
+STEP 5 — POST IT
+--------------------------------------------------------------------
+Open caption.txt in this folder and copy the text.
+Upload the video to LinkedIn NATIVELY (upload the .mp4 file directly —
+do not link to YouTube/Drive; native video gets far more reach).
+Paste the caption. Post.

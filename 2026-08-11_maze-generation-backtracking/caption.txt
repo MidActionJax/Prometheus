@@ -1,0 +1,16 @@
+A maze isn't designed. It's carved by an algorithm that gets lost on purpose.
+
+I built a demo that generates a perfect maze live, using recursive backtracking — a randomized depth-first search that tunnels forward until it hits a dead end, then walks backwards until it finds a new way out.
+
+How the carving works
+Pick a random cell. Look at its unvisited neighbours, choose one at random, knock down the wall between them, and move there. Repeat. When a cell has no unvisited neighbours left, pop the stack and step back one cell — that's the "backtrack." The whole maze is just this loop running until the stack empties.
+
+Why the result is a perfect maze
+Every cell gets added exactly once, and each time one is added, exactly one corridor is carved into it. For N cells that's N-1 corridors, which is the textbook definition of a spanning tree: fully connected, zero loops. The consequence is that there is exactly ONE path between any two points in the finished maze. No shortcuts, no cycles — that property falls out of the algorithm for free, nobody has to enforce it.
+
+What the colours are telling you
+The hue of each corridor is mapped to the recursion depth at the moment it was carved, so you're watching the call stack itself get painted onto the grid. Long unbroken colour runs are the search burrowing deep; sudden hue jumps backwards are it retreating out of a dead end. At the end, a gold pulse traces the maze's diameter — the longest path it contains — found with the double-BFS trick: search from anywhere to find the farthest cell, then search from there to find the farthest cell from it.
+
+The same stack-and-backtrack pattern under this is what solvers, dependency resolvers, and constraint engines run on — it's just rarely this pretty to look at. Video below, ~20 seconds, sound off is fine.
+
+#Algorithms #Python #ComputerScience #DataStructures #Programming #TechExplained
