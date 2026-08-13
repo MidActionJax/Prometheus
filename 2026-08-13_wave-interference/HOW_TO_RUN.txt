@@ -1,0 +1,131 @@
+HOW TO RUN — Wave Interference demo
+===================================================================
+Folder:  E:\Linkedin\2026-08-13_wave-interference
+Script:  wave_interference.py
+
+
+-------------------------------------------------------------------
+STEP 1 — Make sure Python is installed
+-------------------------------------------------------------------
+Open PowerShell (press the Windows key, type "PowerShell", hit Enter)
+and type:
+
+    python --version
+
+If you see something like "Python 3.12.x", you're good — skip to Step 2.
+
+If you get an error or nothing useful:
+  1. Go to https://www.python.org/downloads/
+  2. Click the big yellow "Download Python" button.
+  3. Run the installer.
+  4. IMPORTANT: on the first screen, tick the checkbox that says
+     "Add python.exe to PATH" before clicking Install Now.
+  5. When it finishes, CLOSE PowerShell and open a fresh one, then
+     run "python --version" again to confirm.
+
+
+-------------------------------------------------------------------
+STEP 2 — Install the one dependency (pygame)
+-------------------------------------------------------------------
+In PowerShell, type:
+
+    pip install pygame
+
+Wait for it to finish. You only ever have to do this once on this
+computer — if you've run an earlier demo from this repo, it's already
+installed and this will just say "Requirement already satisfied".
+
+
+-------------------------------------------------------------------
+STEP 3 — Run the demo
+-------------------------------------------------------------------
+Copy and paste these two lines into PowerShell, one at a time:
+
+    cd E:\Linkedin\2026-08-13_wave-interference
+    python wave_interference.py
+
+A window opens showing a dark field with two glowing wave sources
+sending out rings that overlap into a rippling cyan-and-magenta
+interference pattern. It starts running immediately.
+
+
+-------------------------------------------------------------------
+STEP 4 — Controls (worth knowing before you record)
+-------------------------------------------------------------------
+    1 / 2 / 3       switch to 1, 2 or 3 wave sources
+    LEFT / RIGHT    wavelength shorter / longer
+                    ** this is the money shot — hold RIGHT and the
+                    dark nodal lines visibly fan open across the
+                    screen. Great mid-clip moment. **
+    UP / DOWN       frequency faster / slower
+    M               toggle the slowly orbiting source on/off
+                    (on by default — it keeps the pattern moving)
+    T               toggle the floating tracer particles
+    MOUSE CLICK     drag the nearest source to where you clicked
+    SPACE           pause / resume
+    R               reset everything
+    ESC or Q        quit
+
+Suggested 15-second run for the recording:
+    - Let it sit for ~4 seconds on the default 2 sources so the
+      interference pattern reads clearly.
+    - Hold RIGHT for ~3 seconds (nodal lines fan wide open).
+    - Hold LEFT for ~3 seconds (they tighten back up).
+    - Press 3 for three sources and let it run out the clip.
+
+
+-------------------------------------------------------------------
+STEP 5 — Screen-record it
+-------------------------------------------------------------------
+Easiest option (built into Windows, nothing to install):
+
+    - With the demo window in focus, press  Win + Alt + R  to START
+      recording. A small timer bar appears.
+    - Press  Win + Alt + R  again to STOP.
+    - The clip lands in:  C:\Users\<you>\Videos\Captures
+
+    (If that shortcut does nothing, press Win + G first to open the
+    Xbox Game Bar, click the Capture widget's record button, and if
+    prompted tick "Enable gaming features for this app".)
+
+Better quality / more control: OBS Studio (free, obsproject.com) —
+add a "Window Capture" source pointed at the pygame window.
+
+Aim for a 10–20 second clip. Shorter is better than longer; the
+pattern is legible almost immediately.
+
+If you want to show the code next to the running app, put your editor
+on one half of the screen and the demo window on the other, and record
+the full screen instead of just the window.
+
+
+-------------------------------------------------------------------
+STEP 6 — Post it
+-------------------------------------------------------------------
+Upload the video NATIVELY to LinkedIn (drag the file straight into the
+post box — do NOT post a YouTube/Drive link, native video gets far
+more reach).
+
+Then open caption.txt in this folder, copy the whole thing, and paste
+it in as the post text. Reword the first line or two if you're posting
+it into a group as well as on your own feed.
+
+
+-------------------------------------------------------------------
+TROUBLESHOOTING
+-------------------------------------------------------------------
+"python is not recognized"
+    Python isn't on your PATH. Reinstall it and tick
+    "Add python.exe to PATH" (Step 1).
+
+"No module named pygame"
+    Run:  pip install pygame
+    If that fails, try:  python -m pip install pygame
+
+The window opens but feels sluggish
+    Press T to turn off the tracer particles, or press 1 to drop to a
+    single source. Both cut the per-frame work noticeably.
+
+The window opens and instantly closes
+    You probably double-clicked the .py file. Run it from PowerShell
+    using the commands in Step 3 so you can see any error message.
