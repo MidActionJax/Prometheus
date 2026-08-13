@@ -1,0 +1,16 @@
+Two ripples crossing a pond never collide. They pass straight through each other — and the dark bands left behind are the reason we know light is a wave.
+
+I built a demo that simulates two glowing wave sources in real time, so you can watch interference patterns form, breathe, and sweep across the screen as the sources drift.
+
+The rule is almost insultingly simple.
+Each source emits a circular wave: sin(kr − ωt), where r is the distance from that source, k sets how tightly the crests are packed, and ω sets how fast the whole pattern marches outward. The field at any point is just the SUM of every wave passing through it. No collision logic, no interaction rules. Add them up. That's the superposition principle.
+
+Where the sum goes bright, crests are stacking.
+Two crests arriving together double the height — constructive interference, rendered here as cyan blowing out to white. A crest arriving with a trough cancels to nothing — destructive interference, the dark "nodal lines" you can see fanning out from between the two sources. Those lines sit exactly where the path difference to the two sources equals half a wavelength.
+
+Those dark bands won an argument in 1801.
+Thomas Young shone light through two slits and got that same striped pattern on the wall behind. Particles can't cancel each other out. Waves can. The stripes were the proof. Change the wavelength in the demo and watch the fringes fan wider or tighter — that relationship is still how we measure things too small to see, from crystal structure via X-ray diffraction to gravitational waves at LIGO.
+
+Same math shows up in noise-cancelling headphones, antenna array design, and ultrasound. Worth understanding once, properly. Video below — the field is running live, not a loop.
+
+#Physics #Simulation #Python #ComputerScience #TechExplained

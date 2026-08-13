@@ -1,0 +1,94 @@
+GIT COMMANDS — Wave Interference demo (2026-08-13)
+===================================================================
+
+Open PowerShell (or Git Bash), then run these FOUR commands, one at a
+time, from the E:\Linkedin folder.
+
+First, get into the right folder:
+
+    cd E:\Linkedin
+
+Then paste these one at a time:
+
+    git checkout -b demo/wave-interference
+    git add .
+    git commit -m "Add Wave Interference demo"
+    git push -u origin demo/wave-interference
+
+
+-------------------------------------------------------------------
+WHAT EACH ONE DOES (plain English)
+-------------------------------------------------------------------
+    git checkout -b demo/wave-interference
+        Creates a new branch and switches to it. A branch is just a
+        separate copy of the project so your main version stays
+        untouched until you're happy.
+
+    git add .
+        Marks every new/changed file in the folder to be saved.
+
+    git commit -m "Add Wave Interference demo"
+        Saves those files as one labelled snapshot on your machine.
+
+    git push -u origin demo/wave-interference
+        Uploads that branch to GitHub.
+
+
+-------------------------------------------------------------------
+THEN, IN YOUR BROWSER
+-------------------------------------------------------------------
+1. Go to  https://github.com/MidActionJax/Prometheus
+
+2. Because you just pushed a branch, GitHub will show a yellow banner
+   near the top with a green "Compare & pull request" button.
+   Click it.
+   (If the banner isn't there: click the "Pull requests" tab, then
+   "New pull request", and set the compare branch to
+   demo/wave-interference.)
+
+3. In the TITLE box, put:
+
+       Add Wave Interference demo
+
+4. In the big DESCRIPTION box underneath, paste the entire contents
+   of PR_DESCRIPTION.md from this folder:
+   E:\Linkedin\2026-08-13_wave-interference\PR_DESCRIPTION.md
+   (Open it, select all with Ctrl+A, copy with Ctrl+C, paste with
+   Ctrl+V. It's written in Markdown, so GitHub will format the
+   headings and table automatically.)
+
+5. Click the green "Create pull request" button.
+
+6. Whenever you're ready, click "Merge pull request" on that page,
+   then "Confirm merge". Squash merge is fine if it offers it — it
+   just tidies everything into a single entry in the history.
+
+7. GitHub will then offer a "Delete branch" button. Safe to click.
+
+
+-------------------------------------------------------------------
+AFTERWARDS — IMPORTANT
+-------------------------------------------------------------------
+Back in PowerShell, run these two so your local copy picks up the
+merge and the next demo starts from the latest state:
+
+    git checkout main
+    git pull
+
+
+-------------------------------------------------------------------
+IF SOMETHING GOES WRONG
+-------------------------------------------------------------------
+"fatal: a branch named 'demo/wave-interference' already exists"
+    You already made the branch. Just switch to it instead:
+        git checkout demo/wave-interference
+    ...then carry on from "git add ." above.
+
+"nothing to commit, working tree clean"
+    The files are already committed. Skip ahead to the git push line.
+
+Push is rejected or asks for a password
+    GitHub no longer accepts account passwords over HTTPS. Either
+    install GitHub Desktop and sign in there once (it fixes this for
+    the command line too), or generate a Personal Access Token in
+    GitHub Settings > Developer settings and use that as the password.
