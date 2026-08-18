@@ -1,0 +1,13 @@
+Can a swarm of creatures that start out completely random learn to navigate around obstacles with zero instructions on how to steer?
+
+I built a demo that evolves a population of simple "creatures" toward a target using a genetic algorithm — no gradients, no backpropagation, just variation and selection pressure doing the work generation after generation.
+
+How it works: each creature's entire behavior is a "genome" — a fixed sequence of steering directions it plays out blindly for a few seconds. Some genomes happen to steer around the obstacles and get close to the target; most don't.
+
+Selection: after every generation, the closest-to-target creatures survive. The best few are kept unchanged ("elitism"), the rest of the next generation is bred by mixing genes from top performers ("crossover") and randomly nudging some of those genes ("mutation") — plus a few totally fresh random creatures thrown in each round to keep the population from getting stuck on one mediocre route.
+
+Watch the color: creature glow shifts from cold blue to hot gold as fitness improves, so you can watch the population's collective progress in real time without reading a single number.
+
+This is the same basic recipe — random variation plus "keep what works" — behind real evolutionary algorithms used in robotics, game AI, and optimization problems where you can't write down a gradient to follow. No single creature is smart; the population as a whole gets smarter. Full run in the video below.
+
+#GeneticAlgorithm #MachineLearning #AI #Python #EvolutionaryComputation #ComputerScience

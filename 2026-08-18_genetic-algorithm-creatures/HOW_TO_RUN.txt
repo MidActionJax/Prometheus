@@ -1,0 +1,49 @@
+HOW TO RUN — Genetic Algorithm: Evolving Creatures Toward a Target
+====================================================================
+
+1. INSTALL PYTHON (skip if you already have it)
+   - Go to python.org/downloads and download the latest Python 3.
+   - Run the installer. IMPORTANT: check the box "Add python.exe to PATH"
+     before clicking Install.
+
+2. INSTALL THE ONE DEPENDENCY (pygame)
+   - Open a terminal:
+       Windows: press Win, type "PowerShell", hit Enter.
+       Mac: open Terminal from Applications > Utilities.
+   - Run:
+       pip install pygame
+     (If that errors, try "pip3 install pygame" or "python -m pip install pygame".)
+
+3. RUN THE DEMO
+   - In the same terminal, move into this folder. Example if it's on your
+     Desktop inside the Prometheus repo:
+       cd Desktop\Prometheus\2026-08-18_genetic-algorithm-creatures
+   - Then run:
+       python genetic_creatures.py
+     (If that says "python not found", try "python3 genetic_creatures.py".)
+
+4. ON-SCREEN CONTROLS
+   - SPACE       : pause / resume
+   - R           : reset with a brand new random population
+   - ESC or close the window: quit
+
+   What you'll see: a swarm of glowing dots (the creatures) attempts to fly
+   from the bottom-left to the pulsing magenta target in the top-right,
+   weaving around the dark obstacle blocks. Each "generation" plays out for
+   a few seconds, then the population resets and a new, evolved batch takes
+   over. Watch the corner panel — generation count, best fitness, and how
+   many creatures reached the target — and watch the creatures' color drift
+   from cold blue toward hot gold as they improve.
+
+5. SCREEN-RECORD IT
+   - Windows: press Win+G to open Xbox Game Bar, or press Win+Alt+R to
+     start/stop recording directly without opening the overlay.
+   - Mac/cross-platform option: OBS Studio (free, obsproject.com) — add a
+     "Display Capture" or "Window Capture" source and hit Record.
+   - Suggested clip length: 10-20 seconds. A good window to grab is a
+     couple of generations back-to-back so viewers can see the swarm
+     visibly improve and tighten up around the target.
+
+6. POST IT
+   - Post the recorded clip natively on LinkedIn (upload the video file
+     directly, not a link) using the text in caption.txt.

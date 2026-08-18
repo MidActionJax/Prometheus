@@ -1,0 +1,31 @@
+GIT / GITHUB COMMANDS — Genetic Algorithm: Evolving Creatures demo
+====================================================================
+
+Run these from E:\Linkedin in PowerShell or Git Bash (that's the root of
+the Prometheus repo):
+
+    git checkout -b demo/genetic-algorithm-creatures
+    git add .
+    git commit -m "Add Genetic Algorithm: Evolving Creatures demo"
+    git push -u origin demo/genetic-algorithm-creatures
+
+WHAT HAPPENS NEXT
+------------------
+1. After the push, open GitHub in your browser (github.com/MidActionJax/Prometheus).
+   You should see a yellow banner with a "Compare & pull request" button —
+   click it.
+2. In the PR title box, paste:
+       Add Genetic Algorithm: Evolving Creatures demo
+3. In the PR description box, paste the full contents of PR_DESCRIPTION.md
+   (open it in this folder, select all, copy, paste into GitHub).
+4. Click "Create pull request".
+5. Whenever you're ready to publish it, click "Merge pull request" on the
+   PR page (a squash merge is fine).
+
+AFTER MERGING
+-------------
+Run these two commands so your local repo is back in sync and the next
+demo starts from the latest state:
+
+    git checkout main
+    git pull
