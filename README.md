@@ -10,6 +10,7 @@ Each demo lives in its own dated folder and includes:
 
 ## Demos
 
+- [2026-08-18 — Genetic Algorithm: Evolving Creatures](2026-08-18_genetic-algorithm-creatures/) — a population of creatures, each carrying a fixed steering genome, evolves across generations via elitism, crossover, and mutation to route around obstacles and reach a target, with color shifting from cold blue to hot gold as fitness improves.
 - [2026-08-13 — Wave Interference](2026-08-13_wave-interference/) — two glowing point sources emit circular waves that sum by pure superposition, producing live constructive hot spots and the dark hyperbolic nodal lines behind Young's double-slit experiment.
 - [2026-08-11 — Recursive Backtracking Maze Generation](2026-08-11_maze-generation-backtracking/) — a randomized depth-first search carves a perfect maze in real time, with corridor hue mapped to recursion depth and a gold finale tracing the maze's longest path.
 - [2026-08-06 — N-Body Gravity Simulation](2026-08-06_nbody-gravity/) — true N-body gravity (every body pulls on every other body via Newton's law) with glowing trails, producing chaotic, never-repeating orbital paths from a heavy central body plus several lighter ones.
