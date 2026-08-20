@@ -1,0 +1,13 @@
+How does GPS routing actually find the "shortest" road across a whole city in milliseconds?
+
+I built a demo that visualizes Dijkstra's algorithm finding shortest paths across a random network of 30 nodes in real time — no maze grid, just a graph, a priority queue, and a wavefront of color spreading outward from a single source.
+
+How it picks the next node: every reachable node has a "tentative distance." The algorithm always settles whichever unsettled node currently has the smallest one — never guessing, just always taking the cheapest option available so far. That's why the colored wavefront grows outward roughly like ripples in water instead of jumping around randomly.
+
+What "relaxation" means: every time the algorithm reaches a node through a new edge, it asks "is this route cheaper than the best one I've found so far?" If yes, the distance updates and the edge flashes white — that flash is the algorithm literally rewriting its best guess in real time. Do that enough times and you get a proof, not a guess, that the final path is shortest.
+
+Why the tree, not just the path: as nodes settle, their connecting edges build up into a shortest-path tree rooted at the source — meaning the algorithm doesn't just find one shortest route, it finds the shortest route to every reachable node simultaneously, for roughly the same cost as finding just one.
+
+This same idea — relax edges until nothing gets cheaper — runs under network routing protocols, GPS navigation, and flight-connection search, anywhere "cheapest path through a network" matters. Full run in the video below.
+
+#Algorithms #ComputerScience #Python #GraphTheory #SoftwareEngineering #TechExplained
