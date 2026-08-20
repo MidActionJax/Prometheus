@@ -1,0 +1,35 @@
+GIT / GITHUB COMMANDS — Dijkstra's Shortest Path demo
+========================================================
+
+Run these from E:\Linkedin in PowerShell or Git Bash:
+
+    git checkout -b demo/dijkstra-shortest-path
+    git add .
+    git commit -m "Add Dijkstra's Shortest Path demo"
+    git push -u origin demo/dijkstra-shortest-path
+
+WHAT HAPPENS NEXT
+------------------
+1. After the push, open GitHub in your browser and go to the Prometheus
+   repo (https://github.com/MidActionJax/Prometheus). GitHub will show a
+   yellow banner with a "Compare & pull request" button for the branch
+   you just pushed — click it.
+
+2. In the PR form:
+   - Title:  Add Dijkstra's Shortest Path demo
+   - Description: paste the full contents of PR_DESCRIPTION.md (in this
+     same folder) into the description box.
+
+3. Click "Create pull request."
+
+4. Whenever you're ready to merge (e.g. after reviewing the diff or just
+   posting), click "Merge pull request" on the PR page. Squash merge is
+   fine — no need to keep the individual commits.
+
+5. AFTER MERGING, run these to get your local main branch back in sync:
+
+    git checkout main
+    git pull
+
+   That way the next demo starts from the latest state of main instead
+   of branching off something stale.

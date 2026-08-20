@@ -1,0 +1,55 @@
+HOW TO RUN — Dijkstra's Shortest Path (Animated Edge Relaxation)
+==================================================================
+
+1) INSTALL PYTHON (skip if you already have it)
+   - Go to https://www.python.org/downloads/
+   - Download and run the installer for your OS.
+   - IMPORTANT (Windows): on the first install screen, check the box
+     "Add Python to PATH" before clicking Install.
+   - To check it worked, open a terminal (PowerShell on Windows, Terminal
+     on Mac) and type:  python --version
+     You should see a version number print out.
+
+2) INSTALL THE ONE DEPENDENCY
+   This demo uses pygame. Open a terminal and run:
+       pip install pygame
+
+3) RUN THE DEMO
+   In your terminal, navigate into this folder and run the script:
+       cd path\to\2026-08-20_dijkstra-shortest-path
+       python dijkstra_shortest_path.py
+
+   A dark window should open showing a scattered network of glowing dots
+   connected by faint lines. It runs automatically — no clicking needed.
+
+4) ON-SCREEN CONTROLS
+   SPACE   - pause / resume the animation
+   R       - throw away the current graph and start a fresh random one
+   ESC     - quit (or just close the window)
+
+   The demo loops on its own: it searches outward from the source node,
+   traces the final shortest path with a bright comet particle, holds for
+   a couple seconds, then automatically generates a new random graph and
+   starts over. You don't have to press anything to keep it running.
+
+5) HOW TO SCREEN-RECORD IT (Windows)
+   Option A — Xbox Game Bar (built into Windows):
+     - Press Win+G to open Game Bar.
+     - Press Win+Alt+R to start recording directly (no need to open the
+       full Game Bar window first). Press it again to stop.
+     - Recordings are saved to Videos > Captures.
+
+   Option B — OBS Studio (more control, free):
+     - Download from https://obsproject.com
+     - Add a "Window Capture" source pointed at the pygame window.
+     - Click Start Recording / Stop Recording.
+
+6) SUGGESTED CLIP LENGTH
+   10–20 seconds. A good clip: start a few seconds into the search phase
+   (a handful of nodes already colored), let it finish settling, and
+   capture the comet particle tracing the final path — that "aha, it
+   found it" moment reads well even with no sound.
+
+7) POSTING
+   Post natively (upload the video file directly to LinkedIn, don't link
+   out). Use the text in caption.txt as-is or lightly reworded.
