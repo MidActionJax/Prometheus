@@ -1,0 +1,45 @@
+DOUBLE PENDULUM CHAOS — HOW TO RUN
+====================================
+
+1. INSTALL PYTHON (skip if you already have it)
+   - Go to https://www.python.org/downloads/ and download the latest Python 3.
+   - Run the installer. IMPORTANT: check the box "Add Python to PATH" before
+     clicking Install.
+
+2. INSTALL THE ONE DEPENDENCY (pygame)
+   - Open a terminal (Command Prompt, PowerShell, or Terminal on Mac).
+   - Run:
+       pip install pygame
+
+3. RUN THE DEMO
+   - Open a terminal in this folder. Easiest way on Windows: open the folder
+     in File Explorer, click the address bar, type "cmd", press Enter.
+   - Then run:
+       cd path\to\this\folder
+       python double_pendulum_chaos.py
+   - A dark window should open showing a fan of seven glowing pendulums,
+     nearly overlapping at first, that visibly split apart within a few
+     seconds.
+
+ON-SCREEN CONTROLS
+   R           - reset with a fresh random starting angle
+   UP arrow    - widen the starting-angle spread between pendulums
+   DOWN arrow  - narrow the starting-angle spread between pendulums
+   SPACE       - pause / resume
+   ESC         - quit (or just close the window)
+
+BEST MOMENT TO RECORD
+   Press R for a fresh run, then start recording right away — the first
+   3-6 seconds (pendulums swinging together, then visibly tearing apart)
+   is the most compelling stretch. Let it run another 5-10 seconds after
+   the split so the fan of chaotic trails fills out.
+
+HOW TO SCREEN-RECORD (Windows)
+   - Press Win+G to open Xbox Game Bar, or press Win+Alt+R to start
+     recording immediately (press it again to stop).
+   - Alternatively, use OBS Studio (free) for more control over quality.
+   - Suggested clip length: 10-20 seconds.
+
+POSTING
+   - Use the text in caption.txt as the post caption — post it natively
+     (don't just link the video), and attach the screen recording.

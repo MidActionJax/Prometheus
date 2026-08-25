@@ -10,6 +10,7 @@ Each demo lives in its own dated folder and includes:
 
 ## Demos
 
+- [2026-08-25 — Double Pendulum Chaos](2026-08-25_double-pendulum-chaos/) — a fan of double pendulums released from starting angles a fraction of a degree apart, integrated with real Lagrangian mechanics via RK4, visibly tearing apart into chaos as sensitive dependence on initial conditions plays out live.
 - [2026-08-20 — Dijkstra's Shortest Path: Animated Edge Relaxation](2026-08-20_dijkstra-shortest-path/) — a priority-queue-driven shortest-path search over a random weighted graph, with settled nodes colored by a cyan-to-magenta heat gradient as the distance wavefront spreads from the source and a comet particle traces the final shortest-path tree.
 - [2026-08-18 — Genetic Algorithm: Evolving Creatures](2026-08-18_genetic-algorithm-creatures/) — a population of creatures, each carrying a fixed steering genome, evolves across generations via elitism, crossover, and mutation to route around obstacles and reach a target, with color shifting from cold blue to hot gold as fitness improves.
 - [2026-08-13 — Wave Interference](2026-08-13_wave-interference/) — two glowing point sources emit circular waves that sum by pure superposition, producing live constructive hot spots and the dark hyperbolic nodal lines behind Young's double-slit experiment.

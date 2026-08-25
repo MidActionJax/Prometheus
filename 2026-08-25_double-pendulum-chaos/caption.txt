@@ -1,0 +1,13 @@
+Can two pendulums that start less than a tenth of a degree apart end up in completely different places within seconds?
+
+I built a demo that releases a fan of double pendulums — each just a fraction of a degree apart in starting angle — under identical real physics, and watches them tear apart into total chaos in real time.
+
+How a double pendulum works: a single pendulum swings back and forth forever in a simple, predictable arc. Bolt a second rod and mass to the end of the first one, though, and the system becomes chaotic — its motion is governed by nonlinear coupled equations with no repeating pattern, even though every step is fully deterministic.
+
+Sensitive dependence on initial conditions: this is the actual mechanism behind "chaos" and the popular idea of the butterfly effect. It doesn't mean the system is random — it means tiny, unmeasurable differences in starting position get amplified exponentially over time. Here that's made visible: all seven pendulums start almost identically and swing together at first, then visibly split apart into unique paths.
+
+Why it stays honest: every pendulum runs on the same textbook Lagrangian equations of motion, integrated with 4th-order Runge-Kutta so energy doesn't quietly leak out of the simulation. Nothing about the divergence is scripted — it's the physics itself, and the on-screen readout tracks exactly how far the outer bobs have split apart in degrees.
+
+Chaotic systems like this show up everywhere real engineers and scientists work — weather prediction, robotics, orbital mechanics — anywhere a system is deterministic in theory but practically unpredictable past a short horizon. Video below.
+
+#Physics #Simulation #Python #ComputerScience #Chaos #TechExplained
