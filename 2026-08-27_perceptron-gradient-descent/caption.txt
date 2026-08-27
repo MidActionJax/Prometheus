@@ -1,0 +1,13 @@
+Can a machine learn to draw a line through data with nothing but calculus and repetition? Watch it happen in real time.
+
+I built a demo that trains a linear classifier — the "perceptron" idea, run with a smooth logistic activation — from scratch using gradient descent, and renders the model's confidence as a living, glowing field instead of a static plot.
+
+How the field works: every pixel behind the data gets fed into the model's current equation (w1·x + w2·y + b) and squashed through a sigmoid into a probability. Cyan means "confidently class 0," magenta means "confidently class 1," and the bright glowing seam is where the model is truly unsure — the 50/50 decision boundary. As training runs, that seam visibly slides and rotates into place between the two clouds of points.
+
+Why gradient descent works: each step, the model measures how wrong its predictions were (binary cross-entropy loss), computes the direction that would make that loss worse, and moves the weights the opposite way, scaled by a learning rate. Do that a few hundred times and a randomly-initialized line finds its way to a genuinely good separator — no one hand-coded where the boundary should go.
+
+The flashes matter too: points that flip from misclassified to correctly classified light up amber for a moment, so you can watch specific mistakes get corrected rather than just trusting an accuracy number.
+
+This is the same core mechanism — loss, gradient, small step, repeat — that scales all the way up to the largest neural networks in production today. Full demo is below.
+
+#MachineLearning #AI #GradientDescent #Python #DeepLearning #TechExplained

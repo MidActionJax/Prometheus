@@ -1,0 +1,29 @@
+GIT / GITHUB COMMANDS — Gradient Descent Linear Separator demo
+=================================================================
+
+Run these from E:\Linkedin in PowerShell or Git Bash:
+
+    git checkout -b demo/perceptron-gradient-descent
+    git add .
+    git commit -m "Add Gradient Descent: Learning a Linear Separator demo"
+    git push -u origin demo/perceptron-gradient-descent
+
+WHAT HAPPENS NEXT
+------------------
+1. After the push, GitHub will show a "Compare & pull request" button on the
+   repo page (or in the output of the push command as a direct link).
+2. Click it. For the PR title, paste:
+       Add Gradient Descent: Learning a Linear Separator demo
+3. For the PR description box, paste the full contents of
+   PR_DESCRIPTION.md (in this same folder).
+4. Click "Create pull request".
+5. Whenever you're ready (e.g. after reviewing/recording), click
+   "Merge pull request" — squash merge is fine.
+
+AFTER MERGING
+--------------
+Run these to get your local main branch back in sync before starting the
+next demo:
+
+    git checkout main
+    git pull

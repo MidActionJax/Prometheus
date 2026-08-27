@@ -1,0 +1,45 @@
+HOW TO RUN — Gradient Descent: Learning a Linear Separator
+=============================================================
+
+1) INSTALL PYTHON (skip if already installed)
+   - Go to https://www.python.org/downloads/
+   - Download the latest Python 3 installer for Windows.
+   - IMPORTANT: on the first install screen, check the box that says
+     "Add Python to PATH" before clicking Install.
+
+2) INSTALL THE DEPENDENCIES
+   - Open PowerShell (Start menu -> type "PowerShell" -> Enter).
+   - Run:
+       pip install pygame numpy
+
+3) RUN THE DEMO
+   - In PowerShell, move into this folder (adjust path if you moved it):
+       cd E:\Linkedin\2026-08-27_perceptron-gradient-descent
+   - Run:
+       python perceptron_gradient_descent.py
+   - A window titled "Gradient Descent: Learning a Linear Separator" will open.
+
+ON-SCREEN CONTROLS
+   - R      : reshuffle a brand-new random dataset and restart training
+   - SPACE  : pause / resume the gradient descent steps
+   - ESC    : quit (or just close the window)
+
+WHAT TO EXPECT
+   - The model starts with a random, badly-placed decision boundary.
+   - Within a few seconds, the glowing seam (the boundary) visibly slides
+     and rotates until it settles between the cyan and magenta clouds.
+   - It will auto-reset with a fresh random dataset once it's fully
+     converged, so you can just let it run and it keeps demonstrating
+     the "settling" motion in a loop — handy for recording multiple takes.
+
+HOW TO SCREEN-RECORD
+   - Windows: press Win+G to open Xbox Game Bar, or press Win+Alt+R to
+     start/stop recording directly without opening the overlay.
+   - Alternative: OBS Studio (free) for more control over quality/output.
+   - Suggested clip length: 10-20 seconds. A good clip is: hit R right as
+     you start recording so viewers see the boundary start from scratch
+     and visibly converge.
+
+POSTING
+   - Use the text in caption.txt when you post the clip natively to
+     LinkedIn (native video uploads perform better than links).
