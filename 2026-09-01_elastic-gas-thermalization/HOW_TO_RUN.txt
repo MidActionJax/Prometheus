@@ -1,0 +1,51 @@
+HOW TO RUN — Elastic Gas Thermalization
+=========================================
+
+1. INSTALL PYTHON (skip if you already have it)
+   - Go to https://python.org/downloads and download the latest Python 3 installer.
+   - Run it. On the FIRST install screen, check the box that says
+     "Add Python to PATH" before clicking Install. This matters — without
+     it, the "python" command won't work in a terminal.
+
+2. INSTALL THE ONE DEPENDENCY
+   - Open a terminal:
+       Windows: press Win, type "PowerShell", hit Enter.
+       Mac: press Cmd+Space, type "Terminal", hit Enter.
+   - Run:
+       pip install pygame
+
+3. RUN THE DEMO
+   - In the same terminal, move into this folder. For example, if it's on
+     your Desktop inside the Linkedin\Prometheus folder:
+       cd Desktop\Linkedin\2026-09-01_elastic-gas-thermalization
+   - Then run:
+       python elastic_gas_thermalization.py
+   - A dark window titled "Elastic Gas Thermalization" should open showing
+     a glowing box of particles.
+
+4. ON-SCREEN CONTROLS
+   - SPACE — pause / resume the simulation
+   - R     — reset (re-splits particles into hot/cold halves behind a fresh divider)
+   - ESC or closing the window — quit
+
+   Nothing else to configure — it starts split into a slow "cold" cluster on
+   the left and a fast "hot" cluster on the right. After about 2 seconds the
+   divider retracts and the two populations start mixing.
+
+5. HOW TO SCREEN-RECORD IT
+   - Windows: press Win+G to open Xbox Game Bar, or press Win+Alt+R to start
+     recording immediately (press it again to stop). The clip saves to your
+     Videos\Captures folder.
+   - Alternative: OBS Studio (free, obsproject.com) if you want more control
+     over the capture area or frame rate.
+   - Suggested clip length: 10–20 seconds. The best window to capture is
+     right around the divider dropping (~2 seconds in) through the point
+     where the histogram bars visibly settle onto the white Maxwell-Boltzmann
+     curve — that's the moment that reads as "something is really happening"
+     even with the sound off.
+
+6. POSTING
+   - Post the video natively to LinkedIn (native video performs better than
+     a link).
+   - Use the text in caption.txt as your post copy — copy/paste it as-is,
+     or tweak lightly to fit the context (own page vs. a group).

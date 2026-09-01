@@ -1,0 +1,13 @@
+Split a box of particles into "hot" and "fast" on one side and "cold" and "slow" on the other, remove the wall, and walk away. What happens?
+
+Built a demo that simulates exactly that: 70 particles bouncing around a sealed box, colliding elastically (no energy lost, ever), split into a hot half and a cold half behind a divider. Drop the divider and just watch — no rule anywhere tells these particles to "average out," yet they do it anyway.
+
+Elastic collisions: when two equal-mass particles collide here, physics is simple — they swap the component of velocity along the line connecting their centers and leave the rest untouched. No approximations, no fudge factors. That one rule is the entire engine.
+
+Two conservation laws, checked live: the HUD tracks total momentum and total kinetic energy frame by frame. Across thousands of collisions, momentum stays flat and KE stays at ~100% of its starting value — exactly what Newton's laws predict for elastic collisions.
+
+The real payoff: Maxwell-Boltzmann. Within a few seconds, the mixed population settles into a stable statistical shape — few very slow particles, few very fast ones, most somewhere in between. That's the same speed distribution that governs real gas molecules, and you can watch the live histogram converge onto the theoretical curve in real time.
+
+This is the exact same math that underlies thermodynamics, kinetic gas theory, and why a hot cup of coffee and a cold room always end up at the same temperature. No one designs equilibrium — it just emerges. Video below.
+
+#Physics #Simulation #Python #ComputerScience #TechExplained #Thermodynamics
