@@ -10,6 +10,7 @@ Each demo lives in its own dated folder and includes:
 
 ## Demos
 
+- [2026-09-01 — Elastic Gas Thermalization](2026-09-01_elastic-gas-thermalization/) — a box of particles split into fast "hot" and slow "cold" halves collides elastically after a divider drops, conserving momentum and kinetic energy exactly while the speed distribution converges live onto the theoretical Maxwell-Boltzmann curve.
 - [2026-08-27 — Gradient Descent: Learning a Linear Separator](2026-08-27_perceptron-gradient-descent/) — a logistic-regression perceptron trains live via gradient descent on binary cross-entropy loss, rendering its confidence as a glowing cyan-to-magenta field with a bright seam at the 50/50 decision boundary that slides into place between two data clouds.
 - [2026-08-25 — Double Pendulum Chaos](2026-08-25_double-pendulum-chaos/) — a fan of double pendulums released from starting angles a fraction of a degree apart, integrated with real Lagrangian mechanics via RK4, visibly tearing apart into chaos as sensitive dependence on initial conditions plays out live.
 - [2026-08-20 — Dijkstra's Shortest Path: Animated Edge Relaxation](2026-08-20_dijkstra-shortest-path/) — a priority-queue-driven shortest-path search over a random weighted graph, with settled nodes colored by a cyan-to-magenta heat gradient as the distance wavefront spreads from the source and a comet particle traces the final shortest-path tree.
