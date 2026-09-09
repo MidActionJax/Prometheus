@@ -1,0 +1,45 @@
+HOW TO RUN — Convex Hull: Gift Wrapping (Jarvis March)
+========================================================
+
+1) INSTALL PYTHON (skip if you already have it)
+   - Go to https://python.org and download the latest Python 3 installer.
+   - During install, check the box "Add python.exe to PATH" — this is
+     important, without it the commands below won't work.
+
+2) INSTALL THE ONE DEPENDENCY
+   This demo uses pygame. Open a terminal (PowerShell or Command Prompt on
+   Windows) and run:
+
+       pip install pygame
+
+3) RUN THE DEMO
+   In the terminal, navigate into this folder and run the script:
+
+       cd path\to\2026-09-03_convex-hull-gift-wrapping
+       python convex_hull_gift_wrapping.py
+
+   A window should open showing a black canvas with a scattered cloud of
+   cyan dots and a rotating teal beam sweeping around them.
+
+4) ON-SCREEN CONTROLS
+   - R          reshuffle the point cloud immediately (start a fresh hull)
+   - ESC        quit
+   - closing the window also quits
+
+   You don't need to touch anything — it runs and loops on its own,
+   rebuilding a new random point cloud every time it finishes a hull.
+
+5) HOW TO SCREEN-RECORD IT
+   Windows: press Win+G to open Xbox Game Bar, or press Win+Alt+R to start
+   recording directly (press it again to stop). Alternatively, use OBS
+   Studio (free, obsproject.com) for more control over quality.
+
+   Suggested clip length: 10–20 seconds. A good moment to start recording
+   is right as a fresh point cloud appears and the beam starts its first
+   sweep — you'll capture at least one or two full hull edges being found,
+   plus the gold pulse when a hull completes.
+
+6) POSTING
+   Post the clip natively to LinkedIn (native video performs better than a
+   link). Use the caption in caption.txt — copy it as-is or tweak lightly
+   to fit whether you're posting to your own page or sharing in a group.

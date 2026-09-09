@@ -1,0 +1,13 @@
+Why does a bridge collapse from soldiers marching in step, but a car's suspension just quietly absorbs a pothole?
+
+I built a demo that runs four spring-mass-damper systems side by side — same mass, same spring stiffness, different damping — so you can watch the physics that separates "absorbs the bump" from "shakes itself apart."
+
+Damping styles: Three lanes get the exact same displacement kick but different damping ratios (zeta). Underdamped (zeta < 1) oscillates back and forth while slowly losing energy — think a diving board. Critically damped (zeta = 1) returns to rest in the least time possible with zero overshoot — this is the number engineers actually tune for in car suspensions and door closers. Overdamped (zeta > 1) crawls back sluggishly, wasting energy as heat through the damper.
+
+Resonance: The fourth lane is continuously driven by an external oscillating force, and I sweep that drive frequency slowly across the system's natural frequency (omega0 = sqrt(k/m)). Watch the amplitude on the right-hand trace — it stays small almost everywhere, then swells dramatically right as the drive frequency matches omega0. That's the same mechanism behind shattering a wine glass with sound, and why engineers obsess over keeping a structure's natural frequency away from expected vibration sources.
+
+The math: every lane is the same governing equation, m*x'' + c*x' + k*x = F(t), integrated live with RK4 — nothing here is pre-baked or faked, it's the differential equation solving itself 240 times a second.
+
+Damping and resonance show up everywhere from car suspensions to seismic engineering to audio equalizers — one equation, wildly different real-world consequences depending on a single ratio. Full demo in the video below.
+
+#Physics #Simulation #Python #ComputerScience #Engineering #TechExplained

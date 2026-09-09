@@ -1,0 +1,13 @@
+How do you wrap a rubber band around a scattered cloud of points — using code instead of your fingers?
+
+I built a demo that animates the Gift Wrapping algorithm (also called Jarvis March) constructing a convex hull in real time, complete with a rotating radar-style beam sweeping the point cloud to find each edge.
+
+How it picks the next point: from the current hull vertex, the algorithm needs the one point such that every other point in the cloud sits to its left. It tests candidates one by one using a cross product — a simple sign check that tells you whether a third point is clockwise or counter-clockwise from a line. Whichever candidate keeps "winning" that test becomes the next hull vertex.
+
+Why the sweep looks like radar: the beam doesn't test points in random order — it sweeps through them by angle around the current vertex, so the visualization reads as one continuous rotation instead of a jumble of jumping lines. That's a presentation choice on top of the algorithm, not part of it — the math would land on the same hull no matter what order you test in.
+
+Where this shows up for real: convex hulls aren't just a geometry exercise. They're used in collision detection for game and robotics engines, in computing the bounding shape of GPS data, and as a building block for far more advanced computational geometry problems like Delaunay triangulation.
+
+It's a small algorithm, but it's a satisfying one to watch converge — full demo below.
+
+#Algorithms #ComputationalGeometry #Python #ComputerScience #SoftwareEngineering #TechExplained
