@@ -1,0 +1,49 @@
+HOW TO RUN — Spring-Mass-Damper: Damping & Resonance
+======================================================
+
+1. INSTALL PYTHON (skip if you already have it)
+   - Go to https://python.org/downloads and download the latest version.
+   - During install, CHECK THE BOX that says "Add Python to PATH" — this
+     matters, don't skip it.
+
+2. INSTALL THE ONE DEPENDENCY
+   - Open a terminal (PowerShell on Windows, or Terminal on Mac).
+   - Run:
+         pip install pygame
+
+3. RUN THE DEMO
+   - In the terminal, navigate to this folder. For example, if it's inside
+     your Linkedin folder on the E: drive:
+         cd E:\Linkedin\2026-09-08_spring-mass-damper-resonance
+   - Then run:
+         python spring_mass_damper.py
+   - A window should open showing four glowing spring-mass systems.
+
+4. ON-SCREEN CONTROLS
+   - SPACE  — pause / resume the simulation
+   - R      — reset all four systems back to their starting state
+   - ESC or closing the window — quit
+
+5. WHAT YOU'LL SEE
+   - Top 3 lanes: the same spring/mass kicked the same way, but with
+     different damping — watch how differently they settle. They'll
+     automatically re-kick themselves every time they settle down, so
+     you never have to touch anything to keep it interesting.
+   - Bottom lane (gold): continuously driven, with the drive frequency
+     slowly sweeping back and forth. Watch the amplitude swell as the
+     drive frequency crosses the system's natural frequency — that's
+     resonance. This takes a few seconds to build, so give it a moment.
+
+6. SCREEN-RECORDING THE DEMO
+   - Windows: press Win+G to open Xbox Game Bar, or press Win+Alt+R to
+     start/stop a recording directly without the overlay.
+   - Alternative: OBS Studio (free, obsproject.com) if you want more
+     control over capture settings.
+   - Let it run for 10-20 seconds. If you can, time your clip to catch
+     the gold lane's amplitude swelling near resonance — it's the most
+     visually dramatic moment.
+
+7. POSTING
+   - Use the text in caption.txt as your LinkedIn post — post the video
+     natively (upload the file directly to LinkedIn) rather than linking
+     out, since native video performs much better.

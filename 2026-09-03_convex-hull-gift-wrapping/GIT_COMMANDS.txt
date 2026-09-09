@@ -1,0 +1,33 @@
+GIT / GITHUB COMMANDS — Convex Hull: Gift Wrapping demo
+==========================================================
+
+Run these from E:\Linkedin in PowerShell or Git Bash, in order:
+
+    git checkout -b demo/convex-hull-gift-wrapping
+    git add .
+    git commit -m "Add Convex Hull: Gift Wrapping (Jarvis March) demo"
+    git push -u origin demo/convex-hull-gift-wrapping
+
+WHAT HAPPENS NEXT
+------------------
+1. After the push, GitHub will show a "Compare & pull request" button on
+   the repo page (or in the terminal output as a direct link) — click it.
+
+2. In the PR title box, paste:
+       Add Convex Hull: Gift Wrapping (Jarvis March) demo
+
+3. In the PR description box, paste the full contents of
+   PR_DESCRIPTION.md (in this same folder).
+
+4. Click "Create pull request".
+
+5. Whenever you're ready, click "Merge pull request" (a normal squash
+   merge is fine).
+
+AFTER MERGING
+-------------
+Run these two commands so your local main branch is up to date before you
+start the next demo:
+
+    git checkout main
+    git pull

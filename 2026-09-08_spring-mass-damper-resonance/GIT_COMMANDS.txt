@@ -1,0 +1,32 @@
+GIT / GITHUB COMMANDS — Spring-Mass-Damper: Damping & Resonance
+==================================================================
+
+Run these from E:\Linkedin (the Prometheus repo root) in PowerShell or
+Git Bash:
+
+    git checkout -b demo/spring-mass-damper-resonance
+    git add .
+    git commit -m "Add Spring-Mass-Damper: Damping & Resonance demo"
+    git push -u origin demo/spring-mass-damper-resonance
+
+WHAT HAPPENS NEXT
+------------------
+1. After the push, go to the repo on GitHub
+   (https://github.com/MidActionJax/Prometheus). GitHub will show a
+   yellow banner with a "Compare & pull request" button — click it.
+
+2. In the pull request form:
+   - Title: Add Spring-Mass-Damper: Damping & Resonance demo
+   - Description: open PR_DESCRIPTION.md in this folder, copy the whole
+     contents, and paste it into the PR description box.
+
+3. Click "Create pull request".
+
+4. Whenever you're ready to publish it, click "Merge pull request"
+   (squash merge is fine) on that PR page.
+
+5. AFTER MERGING, run these two commands so your next demo starts from
+   the latest state of main:
+
+    git checkout main
+    git pull
