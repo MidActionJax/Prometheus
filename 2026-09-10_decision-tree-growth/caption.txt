@@ -1,0 +1,13 @@
+How does a decision tree learn to carve up data it's never seen — using nothing but straight lines?
+
+I built a demo that grows a real CART decision tree live on a 2D checkerboard dataset, one axis-aligned split at a time, so you can actually watch the greedy algorithm "think" instead of just seeing the finished model.
+
+Gini impurity: at every node, the tree scores every possible x or y threshold by how much it would reduce Gini impurity — a simple measure (1 − p₀² − p₁²) of how mixed the two classes are. Lower impurity, better split. It always takes the single best one available, then repeats on each new region.
+
+Straight cuts only: a tree can only ask "is this value above or below a threshold?" So it approximates any pattern — even a checkerboard — as a staircase of rectangles. Watch closely and you'll see it need several splits just to carve out shapes a curved boundary could draw in one line. That's the real tradeoff behind tree models: simple, interpretable rules, at the cost of blocky boundaries.
+
+When to stop: the tree halts a branch once it hits a max depth or runs out of points to split cleanly — the guardrails that keep it from memorizing noise instead of learning the pattern. The gold rings mark points still misclassified by the current partial tree, shrinking in number as it grows.
+
+This greedy, impurity-driven splitting is the exact building block behind random forests and gradient-boosted trees (XGBoost, LightGBM) — some of the most-used models in applied ML. Full run in the video below.
+
+#MachineLearning #AI #DecisionTrees #DataScience #Python #TechExplained

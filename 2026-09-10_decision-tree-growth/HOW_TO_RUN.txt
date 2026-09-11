@@ -1,0 +1,49 @@
+HOW TO RUN — Decision Tree Growth demo
+========================================
+
+1. INSTALL PYTHON (skip if you already have it)
+   - Go to https://www.python.org/downloads/
+   - Download the latest Python 3 installer for Windows.
+   - Run it, and on the FIRST screen check the box "Add python.exe to PATH"
+     before clicking Install. This step is easy to miss and causes the
+     "python is not recognized" error later if skipped.
+
+2. INSTALL THE ONE DEPENDENCY (pygame)
+   - Open a terminal (PowerShell: search "PowerShell" in the Start menu).
+   - Run:
+         pip install pygame
+
+3. RUN THE DEMO
+   - In the same terminal, navigate to this folder. If this folder is at
+     E:\Linkedin\2026-09-10_decision-tree-growth, run:
+         cd E:\Linkedin\2026-09-10_decision-tree-growth
+   - Then run:
+         python decision_tree_growth.py
+   - A window titled "Decision Tree Growth" should open on a dark background.
+
+4. ON-SCREEN CONTROLS
+   - SPACE  — restart immediately with a freshly generated dataset/tree
+   - ESC    — quit
+   - No controls are required to watch it — it runs and loops on its own,
+     regenerating a new dataset every ~20-25 seconds.
+
+5. SCREEN-RECORDING IT
+   Pick whichever is easiest for you:
+   - Windows built-in (Xbox Game Bar): press Win+G to open the game bar,
+     then click the record button. Or just press Win+Alt+R to start
+     recording instantly, and press it again to stop. The clip saves to
+     your Videos > Captures folder.
+   - OBS Studio (more control, free): https://obsproject.com — add a
+     "Display Capture" or "Window Capture" source pointed at the demo
+     window, then hit Start Recording.
+
+6. SUGGESTED CLIP LENGTH
+   10–20 seconds. A good window to grab: start right as the first split
+   line sweeps in (a few seconds after launch) through several more splits
+   landing and the color regions filling in — that's the most visually
+   active stretch. You don't need to wait for the full ~20s cycle to finish.
+
+7. POSTING
+   Post the clip natively (upload the video file directly to LinkedIn,
+   don't just paste a link) and use the text in caption.txt as the post
+   copy. Copy-paste it as-is or trim lightly to taste.
