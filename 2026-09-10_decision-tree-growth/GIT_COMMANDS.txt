@@ -1,0 +1,30 @@
+GIT / GITHUB COMMANDS — Decision Tree Growth demo
+====================================================
+
+Run these from E:\Linkedin in PowerShell or Git Bash:
+
+    git checkout -b demo/decision-tree-growth
+    git add .
+    git commit -m "Add Decision Tree Growth demo"
+    git push -u origin demo/decision-tree-growth
+
+WHAT HAPPENS NEXT
+------------------
+1. After the push, go to the repo on GitHub
+   (https://github.com/MidActionJax/Prometheus). GitHub will show a yellow
+   banner with a "Compare & pull request" button for the branch you just
+   pushed — click it.
+2. In the PR form:
+   - Title:  Add Decision Tree Growth demo
+   - Description: paste the full contents of PR_DESCRIPTION.md
+     (in this same folder) into the description box.
+3. Click "Create pull request".
+4. When you're ready to publish (any time — no rush), click
+   "Merge pull request". Squash merge is fine.
+
+AFTER MERGING
+-------------
+Run these so your next demo starts from the latest state:
+
+    git checkout main
+    git pull

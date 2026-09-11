@@ -10,6 +10,7 @@ Each demo lives in its own dated folder and includes:
 
 ## Demos
 
+- [2026-09-10 — Decision Tree Growth](2026-09-10_decision-tree-growth/) — a CART decision tree grows live on a 2D checkerboard dataset, animating each axis-aligned Gini-impurity split as a glowing sweep and color-washing regions by class purity.
 - [2026-09-08 — Spring-Mass-Damper: Damping & Resonance](2026-09-08_spring-mass-damper-resonance/) — four damped-harmonic-oscillator systems (m*x'' + c*x' + k*x = F(t)) run side by side via RK4, contrasting underdamped, critically damped, and overdamped return-to-rest behavior against a fourth, continuously driven lane whose amplitude swells live as the drive frequency sweeps through resonance.
 - [2026-09-03 — Convex Hull: Gift Wrapping](2026-09-03_convex-hull-gift-wrapping/) — the Jarvis March algorithm builds a convex hull around a scattered point cloud one edge at a time, animated as a rotating radar-style beam that sweeps candidates by angle and locks in each winning vertex via a cross-product test.
 - [2026-09-01 — Elastic Gas Thermalization](2026-09-01_elastic-gas-thermalization/) — a box of particles split into fast "hot" and slow "cold" halves collides elastically after a divider drops, conserving momentum and kinetic energy exactly while the speed distribution converges live onto the theoretical Maxwell-Boltzmann curve.
