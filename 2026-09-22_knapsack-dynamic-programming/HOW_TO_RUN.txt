@@ -1,0 +1,50 @@
+HOW TO RUN — 0/1 Knapsack: Dynamic Programming Demo
+=====================================================
+
+1) INSTALL PYTHON (skip if you already have it)
+   - Go to https://www.python.org/downloads/
+   - Download and run the installer.
+   - IMPORTANT: on the first install screen, check the box that says
+     "Add python.exe to PATH" before clicking Install.
+
+2) INSTALL THE ONE DEPENDENCY (pygame)
+   - Open PowerShell (search "PowerShell" in the Start menu).
+   - Run:
+         pip install pygame
+
+3) RUN THE DEMO
+   - In PowerShell, navigate to this folder. For example, if it's in
+     E:\Linkedin\2026-09-22_knapsack-dynamic-programming, run:
+         cd E:\Linkedin\2026-09-22_knapsack-dynamic-programming
+   - Then run:
+         python knapsack_dp.py
+   - A dark window should open and the demo starts immediately.
+
+ON-SCREEN CONTROLS
+   - ESC or close the window  -> quit
+   - SPACE                     -> pause / resume
+   - R                         -> reshuffle items and restart right away
+
+WHAT YOU'LL SEE
+   - Left panel: the candidate items, each a colored glowing bar (bar
+     length = value).
+   - Center grid: the DP table filling in cell by cell, left to right,
+     top to bottom, with a glowing cursor sweeping smoothly across it.
+     Brighter/hotter cells = higher achievable value at that point.
+   - After the table fills, a gold trail traces backward through the
+     table to reveal which items were actually selected — those items
+     flash and get outlined in the left panel.
+   - Small HUD in the top-right corner shows fill progress and the
+     running/optimal value.
+   - It loops automatically ~2.5 seconds after finishing, reshuffling
+     item weights/values for a fresh run.
+
+RECORDING A CLIP
+   - Windows: press Win+G to open Xbox Game Bar, or press Win+Alt+R to
+     start/stop recording directly (a small recording indicator will
+     appear). Alternatively, use OBS Studio for more control.
+   - Suggested clip length: 10-20 seconds. A good window is: a few
+     seconds of the grid actively filling, then the backtrace trail
+     firing, then the "OPTIMAL VALUE" reveal.
+   - Once you have your clip, post it natively (upload the video file
+     directly rather than a link) using the text in caption.txt.

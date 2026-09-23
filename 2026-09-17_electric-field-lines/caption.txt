@@ -1,0 +1,13 @@
+⚡ What does an invisible force field actually look like?
+
+I built a demo that makes electric fields visible: drop a few positive and negative charges on screen, and it draws the field lines connecting them in real time, then streams glowing test particles through that field so you can watch the invisible math actually push something around.
+
+Coulomb's law: every charge exerts a force on every other charge given by F = k·q1·q2/r² — same inverse-square shape as gravity, except charge comes in two signs, so the force can pull (opposite charges) or push (like charges) instead of only pulling.
+
+Superposition: the field at any point is just the sum of the Coulomb contribution from every charge in the scene. That's it — there's no separate "field equation" being solved. Every field line you see is the result of repeatedly asking "which way does that sum point from here?" and taking a small step in that direction, over and over.
+
+Field lines vs. particles: the lines show where a positive test charge *would* go; the glowing particles show where one actually *does* go once you give it mass and momentum, which is why the particles swing and curve rather than snapping straight onto the lines.
+
+This is the same electrostatics behind capacitors, particle accelerators, and the shape of lightning — just small enough to click around with a mouse. Video below.
+
+#Physics #Electromagnetism #Simulation #Python #ComputerScience #TechExplained
