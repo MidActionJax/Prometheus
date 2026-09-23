@@ -1,0 +1,15 @@
+What do you actually do when you can't try every possibility?
+
+That's the real problem behind the 0/1 knapsack: pick a subset of items, each with its own weight and value, that maximizes total value without blowing past a fixed capacity. Checking every subset means 2^n possibilities — fine for 10 items, hopeless for 100. I built a demo that animates the dynamic programming solution that sidesteps that entirely, lighting up a full decision table in real time and then tracing back through it to reveal exactly which items got picked and why.
+
+Breaking it down for a second:
+
+The table. Every cell dp[i][w] answers one question: "using only the first i items, what's the best value I can fit in capacity w?" Fill it in order and every cell only ever needs answers already sitting in the table above and to the left of it — no recursion, no recomputation, no guesswork.
+
+The recurrence. At each cell there are exactly two options: skip the current item and keep whatever value was already achievable at that capacity, or take it and add its value to the best answer at the reduced capacity. Take the max of the two. That one-line decision, repeated a few hundred times, is the entire algorithm.
+
+The payoff. Once the table is full, the bottom-right corner holds the optimal value — but the table also remembers *how* it got there. Walking backward from that corner, comparing each cell to the one above it, reconstructs the exact set of items chosen without ever re-solving anything.
+
+This same pattern — build a table once, reuse it everywhere — is what makes DP the tool of choice anytime brute force turns into "wait for the heat death of the universe." Video's below, code's on screen next to it.
+
+#Algorithms #DynamicProgramming #ComputerScience #SoftwareEngineering #Python #TechExplained

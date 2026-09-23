@@ -1,0 +1,13 @@
+What actually makes one algorithm "faster" than another — better code, or fewer decisions?
+
+I built a demo that hands the exact same shuffled array to Bubble Sort, Insertion Sort, and Quicksort at the same time, each racing in its own glowing column. All three are held to one strict rule: every algorithm gets to make one comparison (or swap) at the same fixed rate. No head starts, no artificially sped-up column — just raw decision count, made visible.
+
+The brute-force lane: Bubble Sort and Insertion Sort both work by repeatedly comparing neighboring elements and swapping when they're out of order. For a list of size n, that adds up to roughly n²/2 comparisons in the worst case — double the list size and you roughly quadruple the work. It's honest, simple logic, and it's exactly why both columns are still grinding through comparisons while the third one has already finished.
+
+The divide-and-conquer lane: Quicksort picks a pivot value, partitions the array into "smaller than pivot" and "larger than pivot" in one pass, then recursively repeats on each half. That recursive halving is what gets it down to roughly n·log(n) comparisons on average — doubling the list size only adds one more round of halving, not a multiplier on the whole thing.
+
+The catch: Quicksort's speed is a bet on decent pivot choices. Feed it already-sorted or adversarial data with a naive pivot strategy and it degrades to the same n² worst case as the other two — which is exactly why production sorting libraries randomize pivots or blend in another algorithm as a safety net.
+
+Same array, same hardware, same decision rate. The only thing separating first place from last is algorithm design — full race below.
+
+#Algorithms #BigO #ComputerScience #Python #SoftwareEngineering #TechExplained
